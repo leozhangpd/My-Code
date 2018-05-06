@@ -1,0 +1,63 @@
+html{
+    margin:0;
+    font-size: 62.5%;
+}
+body{
+    margin: 0;
+    padding:0;
+}
+header{
+    position: fixed;
+    left:0;
+    right:0;
+    top:0;
+    height:4rem;
+    background: #5fc0cd;
+}
+.title{
+    position: relative;
+    padding: 1rem;
+    text-align: center;
+    top:50%;
+    transform: translateY(-50%);
+}
+.btn{
+    border-style: none;
+    border-radius: 6px;
+}
+.btn-group > .btn.active{
+    z-index: 0;
+}
+.btn-group > .btn:first-child:not(:last-child):not(.dropdown-toggle) {/*:not()选择器意思是选择除括号内之外的所有元素添加css样式*/
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    outline: none;
+}
+.btn-group > .btn:last-child:not(:first-child){
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    outline: none;
+}
+.btn-default{
+    color: #5fc0cd;
+}
+.btn-default.active{
+    color: #ffffff;
+    background-color: #55a8b3;
+}
+.btn-default.active:hover{
+    color: #ffffff;
+    background: #55a8b3;
+}
+.btn-default.active.focus{
+    color:#ffffff;
+    background: #55a8b3;
+}
+.btn-bg{
+    background-color: #55a8b3;
+    border-radius: 6px;
+}
+.btn:active,.btn.active{
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
