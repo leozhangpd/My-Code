@@ -14,6 +14,10 @@ header{
     height:4rem;
     background: #5fc0cd;
 }
+menu{
+    margin:0 10px;
+    padding:0;
+}
 .title{
     position: relative;
     padding: 1rem;
@@ -24,6 +28,7 @@ header{
 .btn{
     border-style: none;
     border-radius: 6px;
+    padding: 6px 19px;
 }
 .btn-group > .btn.active{
     z-index: 0;
@@ -60,4 +65,40 @@ header{
 .btn:active,.btn.active{
     -webkit-box-shadow: none;
     box-shadow: none;
+}
+.btn-three{
+    position: relative;
+    top: -8px;
+    background: #fff;
+    border-right: solid 1px #aaaaaa;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    border-image: linear-gradient(#fff,#aaa) 30 30;
+}
+/*按钮宽度*/
+.dropdown{
+    display: inline-block;
+    width:30%;
+    text-align: center;
+}
+.caret{
+    margin-left: 1.7rem !important;
+}
+.left-border:before,.right-border:after{
+    display: inline-block;
+    content: ' ';
+    width:1px;
+    height: 21px;
+    background: linear-gradient(#fff,#aaaaaa,#fff);
+    z-index: 999;
+}
+.left-border:before{
+    position: fixed;
+    top: 53px;
+    right: 66%;
+}
+.right-border:after{
+    position: absolute;
+    right: 10px;
 }
